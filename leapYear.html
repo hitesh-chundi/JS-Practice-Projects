@@ -1,0 +1,22 @@
+<!--This is a program to determine which year is the leap year and which year is not-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+<body>
+    <h1>This program is to determine which year is a leap year</h1>
+    <script>
+        let year = prompt("Please enter the year");
+
+        if ((year % 4 === 0 && year % 100 !== 0) || (year % 100 === 0 && year % 400 === 0)) {
+            console.log(`${year} is a leap year`);
+        } else {
+            console.log(`${year} is not a leap year`);
+        }
+    </script>
+</body>
+</html>
